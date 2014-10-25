@@ -23,6 +23,9 @@
 
 	+transition(transform 500ms ease-out)
 
+	p
+		margin: 0
+
 .modal-left .modal-container
 	@extend .modal-container
 	+transform(translate(-100%, -50%))
@@ -49,3 +52,12 @@
 /* Pseudo-element to close the modal */
 #modal-close
 	visibility: hidden
+
+
+.modal-close
+	display: block
+	text-decoration: none
+	color: $black
+	font-size: 2em
+	line-height: 1em
+	text-align: right
