@@ -25,11 +25,13 @@
 
 .modal-left .modal-container
 	@extend .modal-container
-	+transform(translate(-250%, -50%))
+	+transform(translate(-100%, -50%))
+	left: -50%
 
 .modal-right .modal-container
 	@extend .modal-container
-	+transform(translate(250%, -50%))
+	+transform(translate(0, -50%))
+	left: 100%
 
 /* Trigger modal */
 
@@ -37,11 +39,12 @@
 	display: block
 
 .modal:target .modal-container,
-.modal-left:target .modal-container,
-.modal-right:target .modal-container
 	+transform(translate(-50%, -50%))
 	top: 50%
 
+.modal-left:target .modal-container,
+.modal-right:target .modal-container
+	left: 50%
 
 /* Pseudo-element to close the modal */
 #modal-close

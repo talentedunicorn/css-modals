@@ -72,32 +72,36 @@ small {
   transition: transform 500ms ease-out; }
 
 .modal-left .modal-container {
-  -webkit-transform: translate(-250%, -50%);
-  -moz-transform: translate(-250%, -50%);
-  -ms-transform: translate(-250%, -50%);
-  -o-transform: translate(-250%, -50%);
-  transform: translate(-250%, -50%); }
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  left: -50%; }
 
 .modal-right .modal-container {
-  -webkit-transform: translate(250%, -50%);
-  -moz-transform: translate(250%, -50%);
-  -ms-transform: translate(250%, -50%);
-  -o-transform: translate(250%, -50%);
-  transform: translate(250%, -50%); }
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 100%; }
 
 /* Trigger modal */
 .modal:target:before {
   display: block; }
 
-.modal:target .modal-container,
-.modal-left:target .modal-container,
-.modal-right:target .modal-container {
+.modal:target .modal-container {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   top: 50%; }
+
+.modal-left:target .modal-container,
+.modal-right:target .modal-container {
+  left: 50%; }
 
 /* Pseudo-element to close the modal */
 #modal-close {
