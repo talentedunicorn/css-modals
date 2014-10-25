@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans);
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif; }
+
+h1 {
+  font-weight: 700;
+  font-size: 4em; }
+
+h2 {
+  font-weight: 500;
+  font-size: 3em; }
+
+p {
+  font-size: 1.5em;
+  padding: 10px 20px; }
+
+.heading {
+  text-align: center;
+  border-bottom: 1px solid #bbbfc5;
+  padding: 20px; }
+
+/* Text Alignment */
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f4fa;
+  color: #3B3F46; }
+
+/*# sourceMappingURL=main.css.map */

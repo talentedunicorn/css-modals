@@ -1,0 +1,22 @@
+{
+  "name": "css-modal",
+  "version": "0.0.0",
+  "authors": [
+    "Ezekiel Mangalu <emangalu@gmail.com>"
+  ],
+  "description": "A css modal experiment",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "bourbon": "~4.0.2"
+  }
+}
