@@ -2,9 +2,52 @@
 @import "colors"
 @import "vars"
 @import "fonts"
-
+@import "modal"
 
 body
     font-family: $open-sans
     background-color: $body-color
     color: $font-color-default
+
+footer
+    padding: 50px
+
+.list-unstyle
+    list-style: none
+    padding: 30px 0
+    +clearfix
+
+.list-center li
+    text-align: center
+    padding: 0 50px
+    +box-sizing(border-box)
+
+.list-3s li
+    display: inline-block
+    margin: auto
+    width: 100%
+    
+    @media screen and (min-width: $medium-screen)
+        width: (100%/3)
+        float: left
+
+
+.btn
+    display: inline-block
+    width: 100%
+    margin: 20px auto
+    padding: 10px 20px
+    border-radius: em(5px)
+    white-space: nowrap
+    cursor: pointer
+    text-align: center
+    text-decoration: none
+
+    border: em(2) solid $black
+    background-color: $white
+    color: $black
+    +box-sizing(border-box)
+    
+    &:hover
+        background-color: $black
+        color: $white

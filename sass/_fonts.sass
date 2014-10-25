@@ -2,7 +2,7 @@
 
 $arvo: 'Arvo', serif
 $open-sans: 'Open Sans', sans-serif
-
+$font-size-default: 1.5em
 
 h1,
 h2,
@@ -17,8 +17,16 @@ h2
     font-weight: 500
     font-size: 3em
 p
-    font-size: 1.5em
+    font-size: $font-size-default
     padding: 10px 20px
+
+a
+    color: $blue
+    &:hover
+        color: shade($blue, 60%)
+
+small
+    display: inherit
 
 .heading
     text-align: center

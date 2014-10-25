@@ -1,0 +1,48 @@
+.modal:before
+	content: ""
+	position: fixed
+	display: none
+	background-color: transparentize($black, 0.1)
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+
+.modal-container
+	position: fixed
+	background-color: $white
+	top: 0
+	left: 50%
+	padding: 20px
+	border-radius: 5px
+	width: 70%
+	max-width: 400px
+	+box-sizing(border-box)
+
+	+transform(translate(-50%, -100%))
+
+	+transition(transform 500ms ease-out)
+
+.modal-left .modal-container
+	@extend .modal-container
+	+transform(translate(-250%, -50%))
+
+.modal-right .modal-container
+	@extend .modal-container
+	+transform(translate(250%, -50%))
+
+/* Trigger modal */
+
+.modal:target:before
+	display: block
+
+.modal:target .modal-container,
+.modal-left:target .modal-container,
+.modal-right:target .modal-container
+	+transform(translate(-50%, -50%))
+	top: 50%
+
+
+/* Pseudo-element to close the modal */
+#modal-close
+	visibility: hidden
