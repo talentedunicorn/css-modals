@@ -2,4 +2,4 @@
 .sass-cache
 bower_components
 
-css/*.css
+css/*.css*
