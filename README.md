@@ -2,8 +2,8 @@
 A CSS experiment with modals
 
 ### Dependencies
-* [Compass](http://compass-style.org/install/) (for SASS compilation)
-* [Bower](http://bower.io) (for dependencies_ )- [How to install](http://bower.io/#install-bower)
+* [Compass](http://compass-style.org) (for SASS compilation) : [How to install](http://compass-style.org/install/)
+* [Bower](http://bower.io) (for dependencies) : [How to install](http://bower.io/#install-bower)
 
 ### Installation
 * Clone the repo
